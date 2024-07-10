@@ -29,6 +29,7 @@
 <style lang="scss" scoped>
 .posts {
   display: flex;
+  flex-wrap: wrap;
   gap: 32px;
   grid-auto-flow: column;
 
