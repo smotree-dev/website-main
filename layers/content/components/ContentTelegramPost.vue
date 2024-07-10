@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 const props = defineProps<{
   postLink: string
+  userpic?: boolean
 }>()
 
 const telegramPost = computed(() => props.postLink.replace('https://t.me/', ''))
@@ -15,6 +16,7 @@ const telegramPost = computed(() => props.postLink.replace('https://t.me/', ''))
         :data-telegram-post="telegramPost"
         data-width="100%"
         data-color="254D18"
+        :data-userpic="props.userpic.toString()"
       ></Script>
     </ClientOnly>
   </div>
